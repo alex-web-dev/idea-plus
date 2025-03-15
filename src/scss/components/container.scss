@@ -1,0 +1,20 @@
+.container {
+  max-width: calc(var(--container-width) + 160px);
+  margin: 0 auto;
+  padding: 0 80px;
+
+  &--fluid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (max-width: 1240px) {
+    padding-right: 0;
+    padding-left: 88px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

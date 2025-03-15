@@ -1,0 +1,20 @@
+.feature-item {
+  padding: 32px;
+  background-color: var(--color-black-3);
+
+  &__icon {
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    margin-top: 16px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 24px 20px;
+
+    &__icon {
+      margin-bottom: 20px;
+    }
+  }
+}

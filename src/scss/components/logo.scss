@@ -1,0 +1,32 @@
+.logo {
+  padding: 12px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+
+  &__img {
+    display: block;
+    width: 69px;
+    object-fit: contain;
+  }
+
+  @media (max-width: 1240px) {
+    padding: 9px;
+    width: 88px;
+
+    &__img {
+      width: 50px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 8px;
+    width: 72px;
+
+    &__img {
+      width: 40px;
+    }
+  }
+}

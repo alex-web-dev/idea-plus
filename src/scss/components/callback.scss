@@ -1,0 +1,22 @@
+.callback {
+  position: relative;
+  z-index: 2;
+
+  &__content {
+    padding: 32px 31px 32px 0;
+  }
+  
+  @media (max-width: 1240px) {
+    &__img {
+      margin-left: -88px;
+      transform: scaleX(-1);
+      max-width: calc(100% + 88px);
+    } 
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      padding: 24px 20px;
+    }
+  }
+}

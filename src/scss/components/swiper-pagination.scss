@@ -1,0 +1,20 @@
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(var(--color-white--rgb), 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-left: 16px;
+  }
+
+  &-active {
+    background-color: #fff;
+  }
+}

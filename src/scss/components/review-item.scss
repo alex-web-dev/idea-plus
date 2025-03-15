@@ -1,0 +1,55 @@
+.review-item {
+  position: relative;
+  z-index: 3;
+  padding: 32px;
+  background-color: var(--color-black-3);
+  transition: background 0.35s;
+
+  &:hover {
+    background-color: var(--color-black);
+  }
+
+  &__author {
+    margin-bottom: 16px;
+  }
+
+  &__video {
+    height: 319px;
+  }
+
+  &__more {
+    margin-top: 24px;
+    cursor: default;
+    transition: opacity 0.35s, visibility 0.35s;
+  }
+
+  &:hover &__more {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__more-btn {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.35s, visibility 0.35s;
+  }
+
+  &:hover &__more-btn {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media (max-width: 1240px) {
+    &__video {
+      height: auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 24px 20px;
+  }
+}

@@ -1,0 +1,41 @@
+.menu {
+  &__list {
+    margin-left: -59px;
+    margin-top: -12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-left: 59px;
+    margin-top: 12px;
+  }
+
+  &__link {
+    transition: opacity 0.35s;
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    &__list {
+      margin-left: -40px;
+    }
+
+    &__item {
+      margin-left: 40px;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    &__list {
+      margin-left: -32px;
+    }
+
+    &__item {
+      margin-left: 32px;
+    }
+  }
+}

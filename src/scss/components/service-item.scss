@@ -1,0 +1,100 @@
+.service-item {
+  position: relative;
+  padding: 32px 0;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--color-black-3);
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 12px;
+    padding: 0 32px;
+    min-height: 84px;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    filter: grayscale(1);
+    transition: filter 0.35s;
+  }
+
+  &:hover &__img {
+    filter: grayscale(0);
+  }
+
+  &__features {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1;
+  }
+
+  &__feature {
+    transition: background 0.35s;
+
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+
+    svg {
+      stroke: var(--color-white);
+      transition: stroke 0.35s;
+    }
+  }
+
+  &:hover &__feature {
+    background-color: var(--color-white);
+
+    svg {
+      stroke: var(--color-black);
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s;
+  }
+
+  &:hover &__btn {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 194px;
+      right: 29px;
+      width: 142px;
+      height: 149px;
+      background: var(--color-white);
+      filter: blur(75px);
+      opacity: 0;
+      transition: opacity 0.35s;
+    }
+  }
+
+  &:hover &__backdrop {
+    &:before {
+      opacity: 1;
+    }
+  }
+}

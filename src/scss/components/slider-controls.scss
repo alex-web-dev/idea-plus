@@ -1,0 +1,16 @@
+.slider-controls {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__btn-next,
+  &__btn-prev {
+    transition: background 0.35s;
+
+    &.swiper-button-disabled {
+      background-color: rgba(var(--color-white--rgb), 0.5);
+      cursor: default;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: var(--color-white);
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    padding: 16px 40px 16px 0;
+    flex: 0 1 550px;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    align-self: stretch;
+    flex: 0 0 auto;
+  }
+
+  &__right {
+    padding: 20px 0 20px 40px;
+    flex: 0 1 550px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__in-touch {
+    position: relative;
+    margin-right: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: flex-start;
+
+    &:before {
+      content: "";
+      margin-top: 8px;
+      margin-right: 8px;
+      flex: 0 0 auto;
+      width: 6px;
+      height: 6px;
+      background-color: #008324;
+      border-radius: 50%;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      flex: 0 0 auto;
+      width: 1px;
+      height: 16px;
+      background-color: rgba(var(--color-grey--rgb), 0.3);
+    }
+  }
+
+  &__phone {
+    margin-right: 16px;
+  }
+
+  &__btn {
+    margin-left: auto;
+  }
+
+  &__menu-toggle {
+    display: none;
+  }
+
+  @media (max-width: 1240px) {
+    &__container {
+      padding: 0;
+    }
+
+    &__left {
+      display: none;
+    }
+
+    &__logo {
+      order: 2;
+      margin-right: 0;
+    }
+
+    &__menu-toggle {
+      width: 90px;
+      height: auto;
+      align-self: stretch;
+      flex: 0 0 auto;
+      order: -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__right {
+      padding: 8px 32px;
+      flex: 1 1 auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__logo {
+      order: -2;
+    }
+
+    &__right {
+      padding: 14px 16px;
+      justify-content: flex-end;
+    }
+
+    &__in-touch {
+      display: none;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    &__phone {
+      margin-right: 0;
+    }
+
+    &__menu-toggle {
+      width: 56px;
+    }
+  }
+}

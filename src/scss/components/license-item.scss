@@ -1,0 +1,54 @@
+.license-item {
+  position: relative;
+  height: 360px;
+  background-color: var(--color-black-3);
+  transition: background 0.35s;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--color-black--rgb), 0.2);
+    transition: opacity 0.35s, visibility 0.35s;
+  }
+
+  &:hover {
+    background-color: var(--color-black);
+
+    &:before {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__img {
+    margin-left: auto;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    filter: grayscale(1);
+    transition: filter 0.35s;
+  }
+
+  &:hover &__img {
+    filter: grayscale(0);
+  }
+
+  &__btn {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.35s, visibility 0.35s;
+  }
+
+  &:hover &__btn {
+    visibility: visible;
+    opacity: 1;
+  }
+}

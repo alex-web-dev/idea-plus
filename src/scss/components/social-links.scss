@@ -1,0 +1,13 @@
+.social-links {
+  &__list {
+    margin-top: -8px;
+    margin-left: -16px;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 8px;
+    margin-left: 16px;
+  }
+}

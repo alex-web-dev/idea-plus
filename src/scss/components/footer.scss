@@ -1,0 +1,145 @@
+.footer {
+  background-color: var(--color-black);
+
+  &__top {
+    padding: 60px 0;
+  }
+
+  &__top-content {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__column {
+    padding-right: 15px;
+    width: 295px;
+
+    &:nth-child(3) {
+        margin-left: auto;
+        padding-right: 0;
+        text-align: right;
+    }
+  }
+
+  &__label {
+    margin-bottom: 32px;
+  }
+
+  &__menu-item {
+    &:not(:first-child) {
+        margin-top: 16px;
+    }
+  }
+
+  &__contact {
+    &:not(:first-child) {
+        margin-top: 20px;
+    }
+  }
+
+  &__contact-label {
+    margin-bottom: 4px;
+  }
+
+  &__contact-links {
+    margin-top: 12px;
+  }
+
+  &__bottom {
+    padding: 28px 0;
+    border-top: 1px solid rgba(var(--color-white--rgb), 0.1);
+  }
+
+  &__bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__privacy {
+    display: flex;
+    align-items: center;
+  }
+
+  &__privacy-link {
+    &:not(:first-child) {
+        margin-left: 60px;
+    }
+  }
+
+  @media (max-width: 1240px) {
+    &__container {
+      padding-right: 88px;
+    }
+
+    &__top {
+      padding-bottom: 44px;
+    }
+
+    &__top-content {
+      flex-wrap: wrap;
+    }
+
+    &__column {
+      width: 50%;
+
+      &:nth-child(3) {
+        margin-top: 40px;
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    &__bottom-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__privacy-link {
+      &:not(:first-child) {
+        margin-left: 40px;
+      }
+    }
+
+    &__copyright {
+      margin-top: 24px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__column {
+      width: 100%;
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+
+    &__top {
+      padding-bottom: 0;
+    }
+
+    &__bottom {
+      padding-top: 20px;
+      padding-bottom: 24px;
+      border-top: none;
+    }
+
+    &__privacy {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__privacy-link {
+      &:not(:first-child) {
+        margin-top: 16px;
+        margin-left: 0;
+      }
+    }
+  }
+}
