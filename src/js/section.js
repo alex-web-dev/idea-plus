@@ -1,22 +1,22 @@
-const $labels = document.querySelectorAll(".section__label");
+const $labels = document.querySelectorAll(".section-label");
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      const $label = entry.target.querySelector(".section__label");
+      const $label = entry.target.querySelector(".section-label");
       if (entry.isIntersecting) {
-        $label.classList.add("section__label--active");
+        $label.classList.add("section-label--active");
       } else {
-        $label.classList.remove("section__label--active");
+        $label.classList.remove("section-label--active");
       }
     });
   },
   {
     threshold: 0,
-    rootMargin: "-200px 0px -320px 0px",
+    rootMargin: "-80px 0px -320px 0px",
   }
 );
 
-const $sections = document.querySelectorAll(".section");
+const $sections = document.querySelectorAll(".section, .article__section");
 
 $sections.forEach(($section) => {
   observer.observe($section);

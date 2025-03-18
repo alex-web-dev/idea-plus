@@ -28,6 +28,11 @@
     line-height: 1.7;
   }
 
+  &--px-lg {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   &--iflex {
     display: inline-flex;
     align-items: center;

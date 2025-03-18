@@ -1,0 +1,13 @@
+.filter-checkbox {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked ~ &__btn {
+    color: rgba(var(--color-black--rgb), 0.5);
+  }
+}

@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--color-white);
 
   &--sm {
     width: 44px;
@@ -20,6 +20,11 @@
 
   &--white-01 {
     background-color: rgba(var(--color-white--rgb), 0.1);
+  }
+
+  &--disabled {
+    background-color: rgba(var(--color-white--rgb), 0.5);
+    pointer-events: none;
   }
 
   &__inner {

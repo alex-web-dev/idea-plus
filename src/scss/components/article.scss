@@ -1,0 +1,164 @@
+.article {
+  &__content {
+    display: flex;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% + 50px);
+  }
+
+  &__section {
+    display: flex;
+    align-items: flex-start;
+
+    &:last-child {
+      flex: 1 1 auto;
+    }
+  }
+
+  &__section-body {
+    position: relative;
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid #373737;
+    border-right: 1px solid #373737;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: calc(50% - 1px);
+      top: 0;
+      width: 1px;
+      height: 100%;
+      z-index: -1;
+      background-color: #373737;
+    }
+
+    &--pt-sm {
+      padding-top: 80px;
+    }
+
+    &--pt-lg {
+      padding-top: 120px;
+    }
+  }
+
+  &__section-label {
+    &--pt-sm {
+      padding-top: 80px;
+    }
+
+    &--pt-lg {
+      padding-top: 120px;
+    }
+  }
+
+  &__aside {
+    position: relative;
+    border-left: 1px solid #373737;
+    border-right: 1px solid #373737;
+    width: calc(50% - 50px);
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: calc(50% - 1px);
+      top: 0;
+      width: 1px;
+      height: 100%;
+      z-index: -1;
+      background-color: #373737;
+    }
+  }
+
+  &__aside-content {
+    position: sticky;
+    top: 88px;
+  }
+
+  &__aside-slider {
+    max-width: 590px;
+    max-height: calc(100vh - 88px);
+    max-height: calc(100dvh - 88px);
+  }
+
+  &__mobile-slider {
+    margin-top: 32px;
+    display: none;
+    max-width: 100%;
+  }
+
+  @media (max-width: 1240px) {
+    &__main {
+      width: 100%;
+    }
+
+    &__section-body {
+      width: calc(100% - 88px);
+
+      &--pt-sm {
+        padding-top: 40px;
+      }
+  
+      &--pt-lg {
+        padding-top: 80px;
+      }
+    }
+
+    &__section-label {
+      &--pt-sm {
+        padding-top: 40px;
+      }
+  
+      &--pt-lg {
+        padding-top: 80px;
+      }
+    }
+    
+    &__aside-content {
+      top: 64px;
+    }
+
+    &__aside-slider {
+      max-height: none;
+    }
+
+    &__mobile-slider {
+      display: block;
+    }
+
+    &__aside {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__section-body {
+      border-right: none;
+
+      &:before {
+        display: none;
+      }
+      
+      &--pt-sm {
+        padding-top: 0;
+      }
+  
+      &--pt-lg {
+        padding-top: 20px;
+      }
+    }
+
+    &__mobile-slider {
+      margin-top: 24px;
+    }
+
+    &__aside-slider {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+}

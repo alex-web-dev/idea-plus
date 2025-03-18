@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <title>Идея Плюс - Портфолио</title>
+    <script type="module" crossorigin src="./assets/main-KiCUgPF7.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-B8Jvx8up.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__content">
+          <div class="header__left">
+            <nav class="menu header__menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="link link--iflex link--black link--upper link--sm menu__link" href="#">
+                    <span>Услуги</span>
+                    <img class="link__icon" src="img/icons/plus.svg" alt="" />
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--iflex link--black link--upper link--sm menu__link" href="portfolio.html">
+                    <span>Портфолио</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--iflex link--black link--upper link--sm menu__link" href="about.html">
+                    <span>О компании</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--iflex link--black link--upper link--sm menu__link" href="contacts.html">
+                    <span>Контакты</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <a class="logo header__logo" href="index.html">
+            <img class="logo__img" src="img/logo.svg" alt="" />
+          </a>
+          <div class="header__right">
+            <div class="text text--black text--upper text--sm header__in-touch">Мы на связи</div>
+            <a class="text text--black text--medium text--sm header__phone" href="tel:+79999999999">+7 (999) 999 99 99</a>
+            <button class="btn btn--sm btn--medium header__btn">Оставить заявку</button>
+          </div>
+          <button class="menu-toggle header__menu-toggle js-toggle-menu">
+            <span class="menu-toggle__lines"></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu header__mobile-menu">
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__body">
+            <div class="mobile-menu__main">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a class="link link--iflex link--upper link--lg mobile-menu__link" href="#">
+                    <span>Услуги</span>
+                    <img class="link__icon" src="img/icons/plus-white.svg" alt="" />
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link link--iflex link--upper link--lg mobile-menu__link" href="portfolio.html">
+                    <span>Портфолио</span>
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link link--iflex link--upper link--lg mobile-menu__link" href="about.html">
+                    <span>О компании</span>
+                  </a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link link--iflex link--upper link--lg mobile-menu__link" href="contacts.html">
+                    <span>Контакты</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="mobile-menu__main-bottom">
+                <div class="text text--upper mobile-menu__in-touch">Мы на связи</div>
+                <a class="text text--medium text--lg mobile-menu__phone" href="tel:+79999999999">+7 (999) 999 99 99</a>
+                <button class="btn btn--sm btn--medium btn--white mobile-menu__btn">Оставить заявку</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section section--index-3">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__col" data-aos="fade-in">
+              <div class="info info--pt-xl info--pb-lg section__info">
+                <div class="breadcrumb info__breadcrumb">
+                  <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                      <a class="link link--hover-underline link--sm link--upper breadcrumb__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                      <span class="link link--grey link--sm link--upper breadcrumb__current">Портфолио</span>
+                    </li>
+                  </ul>
+                </div>
+                <h1 class="title title--1 info__title">Наше портфолио</h1>
+              </div>
+            </div>
+            <div class="section-label section__label">
+              <div class="section-label__content">
+                <div class="section-label__body section-label__body--px-xl">Последние работы</div>
+              </div>
+            </div>
+            <div class="section__col section__col--justify-end" data-aos="fade-in" data-aos-delay="350">
+              <div class="filters">
+                <div class="filters__selected">
+                  <div class="filters__selected-list"></div>
+                  <button class="link link--sm link--upper link--underline filters__selected-reset">Сбросить</button>
+                </div>
+                <div class="filters__list">
+                  <div class="filter-item filters__item">
+                    <button class="link link--flex link--xl link--upper filter-item__btn">
+                      <span>Тип системы</span>
+                      <span class="filter-item__count"></span>
+                      <img class="link__icon filter-item__btn-icon" src="img/icons/plus-white.svg" alt="" />
+                      <img class="link__icon filter-item__btn-icon filter-item__btn-icon--active" src="img/icons/minus.svg" alt="" />
+                    </button>
+                    <div class="filter-item__main">
+                      <label class="filter-checkbox filter-item__checkbox">
+                        <input class="filter-checkbox__input" type="checkbox" name="system-type" data-label="Внутрипольные конвекторы" />
+                        <span class="text text--black text--iflex text--justify-between filter-checkbox__btn">
+                          <span>Внутрипольные конвекторы</span>
+                          <div class="filter-checkbox__switch"></div>
+                        </span>
+                      </label>
+                      <label class="filter-checkbox filter-item__checkbox">
+                        <input
+                          class="filter-checkbox__input"
+                          type="checkbox"
+                          name="system-type"
+                          data-label="Бытовые и промышленные сплит-системы" />
+                        <span class="text text--black text--iflex text--justify-between filter-checkbox__btn">
+                          <span>Бытовые и промышленные сплит-системы</span>
+                          <div class="filter-checkbox__switch"></div>
+                        </span>
+                      </label>
+                      <label class="filter-checkbox filter-item__checkbox">
+                        <input class="filter-checkbox__input" type="checkbox" name="system-type" data-label="VRF-системы" />
+                        <span class="text text--black text--iflex text--justify-between filter-checkbox__btn">
+                          <span>VRF-системы</span>
+                          <div class="filter-checkbox__switch"></div>
+                        </span>
+                      </label>
+                      <label class="filter-checkbox filter-item__checkbox">
+                        <input class="filter-checkbox__input" type="checkbox" name="system-type" data-label="Центральные кондиционеры" />
+                        <span class="text text--black text--iflex text--justify-between filter-checkbox__btn">
+                          <span>Центральные кондиционеры</span>
+                          <div class="filter-checkbox__switch"></div>
+                        </span>
+                      </label>
+                      <label class="filter-checkbox filter-item__checkbox">
+                        <input
+                          class="filter-checkbox__input"
+                          type="checkbox"
+                          name="system-type"
+                          data-label="Воздушные и геотермальные тепловые насосы" />
+                        <span class="text text--black text--iflex text--justify-between filter-checkbox__btn">
+                          <span>Воздушные и геотермальные тепловые насосы</span>
+                          <div class="filter-checkbox__switch"></div>
+                        </span>
+                      </label>
+                      <label class="filter-checkbox filter-item__checkbox">
+                        <input class="filter-checkbox__input" type="checkbox" name="system-type" data-label="Чиллеры" />
+                        <span class="text text--black text--iflex text--justify-between filter-checkbox__btn">
+                          <span>Чиллеры</span>
+                          <div class="filter-checkbox__switch"></div>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filter-item filters__item">
+                    <button class="link link--flex link--xl link--upper filter-item__btn">
+                      <span>Тип помещения</span>
+                      <span class="filter-item__count"></span>
+                      <img class="link__icon filter-item__btn-icon" src="img/icons/plus-white.svg" alt="" />
+                      <img class="link__icon filter-item__btn-icon filter-item__btn-icon--active" src="img/icons/minus.svg" alt="" />
+                    </button>
+                    <div class="filter-item__main">
+                      <label class="filter-checkbox filter-item__checkbox">
+                        <input class="filter-checkbox__input" type="checkbox" name="system-type" data-label="Жилое" />
+                        <span class="text text--black text--iflex text--justify-between filter-checkbox__btn">
+                          <span>Жилое</span>
+                          <div class="filter-checkbox__switch"></div>
+                        </span>
+                      </label>
+                      <label class="filter-checkbox filter-item__checkbox">
+                        <input class="filter-checkbox__input" type="checkbox" name="system-type" data-label="Офисное" />
+                        <span class="text text--black text--iflex text--justify-between filter-checkbox__btn">
+                          <span>Офисное</span>
+                          <div class="filter-checkbox__switch"></div>
+                        </span>
+                      </label>
+                      <label class="filter-checkbox filter-item__checkbox">
+                        <input class="filter-checkbox__input" type="checkbox" name="system-type" data-label="Промышленнное" />
+                        <span class="text text--black text--iflex text--justify-between filter-checkbox__btn">
+                          <span>Промышленнное</span>
+                          <div class="filter-checkbox__switch"></div>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="portfolio" data-aos="fade-in" data-aos-delay="350">
+        <div class="container">
+          <div class="portfolio__content">
+            <div class="portfolio__list">
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/1.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Жилое помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/2.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Промышленное помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/3.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Офисное помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/4.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Промышленное помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/5.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Промышленное помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="callback-card portfolio__item">
+                <h3 class="title title--2 callback-card__title">Не знаете что выбрать?</h3>
+                <p class="text callback-card__text">Оставьте свои контактные данные и наш оператор перезвонит вам в ближайшее время</p>
+                <button class="btn btn--px-lg btn--iflex btn--white callback-card__btn">
+                  <span>Оставить заявку</span>
+                  <img class="btn__icon" src="img/icons/plus.svg" alt="" />
+                </button>
+                <img class="callback-card__bg" src="img/portfolio/callback.png" alt="" />
+              </div>
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/6.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Промышленное помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/7.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Промышленное помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/1.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Промышленное помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/2.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Промышленное помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/3.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Промышленное помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-item portfolio__item">
+                <a class="portfolio-item__img-box" href="portfolio-item.html">
+                  <img class="portfolio-item__img" src="img/portfolio/4.jpg" alt="" />
+                </a>
+                <div class="portfolio-item__info">
+                  <div class="portfolio-item__details">
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Тип системы</div>
+                      <div class="text portfolio-item__detail-value">Конвектор</div>
+                    </div>
+                    <div class="portfolio-item__detail">
+                      <div class="text text--grey portfolio-item__detail-text">Объект</div>
+                      <div class="text portfolio-item__detail-value">Промышленное помещение</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__col" data-aos="fade-in">
+              <div class="page-control">
+                <button class="link link--xl link--iflex link--upper link--px-xl page-control__more">
+                  <span>Показать еще 10 проектов</span>
+                  <img class="link__icon" src="img/icons/plus-white.svg" alt="" />
+                </button>
+                <span class="text text--grey page-control__count">10 из 67</span>
+              </div>
+            </div>
+            <div class="section-label section__label">
+              <div class="section-label__content"></div>
+            </div>
+            <div class="section__col" data-aos="fade-in" data-aos-delay="350">
+              <div class="page-control page-control--py-sm page-control--sm-row">
+                <div class="pagination page-control__pagination">
+                  <div class="pagination__list">
+                    <span class="pagination__active">1</span>
+                    <a class="pagination__link" href="#">2</a>
+                    <a class="pagination__link" href="#">3</a>
+                    <a class="pagination__link" href="#">4</a>
+                    <a class="pagination__link" href="#">...</a>
+                  </div>
+                </div>
+                <div class="page-control__btns">
+                  <a class="circle circle--disabled page-control__btns-item" href="#">
+                    <img src="img/icons/minus.svg" alt="" />
+                  </a>
+                  <a class="circle page-control__btns-item" href="#">
+                    <img src="img/icons/plus.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section section--backdrop">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__col section__col--pt-lg">
+              <div class="callback">
+                <div class="callback__content">
+                  <form class="form callback__form">
+                    <div class="form__header">
+                      <h2 class="title title--2 form__title">Не знаете что выбрать?</h2>
+                      <p class="text text--my-xs form__text">
+                        Оставьте свои контактные данные и наш оператор перезвонит вам в&nbsp;ближайшее время
+                      </p>
+                    </div>
+                    <div class="form__main">
+                      <div class="form__group">
+                        <div class="form__group-items">
+                          <div class="input form__group-item">
+                            <div class="input__main">
+                              <input class="input__field" type="text" placeholder="Ваше имя" />
+                            </div>
+                          </div>
+                          <div class="input form__group-item">
+                            <div class="input__main">
+                              <input
+                                class="input__field js-imask"
+                                type="text"
+                                placeholder="+7 (_ _ _ ) _ _ _  _ _  _ _"
+                                data-mask="+{7} (000) 000-00-00" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn--iflex btn--white btn--full form__submit">
+                        <span>Оставить заявку</span>
+                        <img class="btn__icon" src="img/icons/plus.svg" alt="" />
+                      </button>
+                      <p class="text text--sm text--light text--grey text--link-line text--center form__privacy">
+                        Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь
+                        <a href="#">c политикой конфиденциальности и обработку персональных данных</a>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="section-label section-label--pt-lg section__label">
+              <div class="section-label__content">
+                <div class="section-label__body">Мы всегда на связи</div>
+              </div>
+            </div>
+            <div class="section__col section__col--pt-lg" data-aos="fade-in">
+              <div class="callback section__inner section__inner--mt-auto section__inner--index-0">
+                <img class="callback__img" src="img/callback.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container footer__container">
+          <div class="footer__top-content">
+            <div class="footer__column">
+              <div class="text text--sm text--grey text--upper footer__label">Идея плюс</div>
+              <div class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="link link--white link--upper footer__menu-link" href="index.html">Главная</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="link link--white link--upper footer__menu-link" href="portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="link link--white link--upper footer__menu-link" href="#">О компании</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="link link--white link--upper footer__menu-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__column">
+              <div class="text text--sm text--grey text--upper footer__label">Услуги</div>
+              <div class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="link link--white link--upper footer__menu-link" href="#">Внутрипольные конвекторы</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="link link--white link--upper footer__menu-link" href="#">Сплит-системы</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="link link--white link--upper footer__menu-link" href="#">VRF-системы</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="link link--white link--upper footer__menu-link" href="#">Кондиционеры</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="link link--white link--upper footer__menu-link" href="#">Тепловые насосы</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="link link--white link--upper footer__menu-link" href="#">Чиллеры</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__column">
+              <div class="text text--sm text--grey text--upper footer__label">Как с нами связаться</div>
+              <div class="footer__contacts">
+                <div class="footer__contact">
+                  <div class="text text--light text--grey footer__contact-label">Номер телефона</div>
+                  <a class="link" href="tel:+79999999999">+7 (999) 999 99 99</a>
+                </div>
+                <div class="footer__contact">
+                  <div class="text text--light text--grey footer__contact-label">Адрес</div>
+                  <div class="text text--upper">г. Новосибирск, ул. Сибиряков-Гвардейцев, 60, оф. 15</div>
+                </div>
+                <div class="footer__contact">
+                  <div class="text text--light text--grey footer__contact-label">Социальные сети</div>
+                  <div class="social-links footer__contact-links">
+                    <div class="social-links__list">
+                      <a class="icon social-links__item" href="#">
+                        <img class="icon__img" src="img/icons/whatsapp-white.svg" alt="" />
+                      </a>
+                      <a class="icon social-links__item" href="#">
+                        <img class="icon__img" src="img/icons/telegram-white.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__container">
+          <div class="footer__bottom-content">
+            <div class="footer__privacy">
+              <a class="link link--grey link--underline link--light footer__privacy-link" href="#">Политика конфиденциальности</a>
+              <a class="link link--grey link--underline link--light footer__privacy-link" href="#">Обработка персональных данных</a>
+            </div>
+            <div class="text text--grey text--light footer__copyright">ООО “Идея Плюс” 2007 - 2025 гг.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
