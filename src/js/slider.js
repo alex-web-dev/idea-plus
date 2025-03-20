@@ -11,6 +11,7 @@ $sliders.forEach(($slider) => {
   new Swiper($swiper, {
     modules: [Navigation, Pagination, Controller],
     slidesPerView: 1,
+    spaceBetween: 1,
     speed: 500,
     navigation: {
       prevEl: $prev,

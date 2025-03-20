@@ -40,6 +40,34 @@
     object-fit: cover;
   }
 
+  &__slide-features {
+    position: absolute;
+    left: 20px;
+    top: 52px;
+    z-index: 1;
+  }
+
+  &__slide-feature {
+    transition: background 0.35s;
+
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+
+    svg {
+      stroke: var(--color-white);
+      transition: stroke 0.35s;
+    }
+  }
+
+  &__slide:hover &__slide-feature {
+    background-color: var(--color-white);
+
+    svg {
+      stroke: var(--color-black);
+    }
+  }
+
   &__pagination {
     position: absolute;
     bottom: 39px;

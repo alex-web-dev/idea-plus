@@ -54,6 +54,10 @@
     &--border-left-none {
       border-left: none;
     }
+
+    &--index-2 {
+      z-index: 2;
+    }
   }
 
   &__slider {
@@ -92,6 +96,10 @@
       margin-top: auto;
     }
 
+    &--ml-auto {
+      margin-left: auto;
+    }
+
     &--index-0 {
       z-index: 0;
     }
@@ -113,6 +121,13 @@
     min-height: 520px;
   }
 
+  &__content:not(:first-child) .section__services .services__item {
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-top: none;
+    }
+  }
+
   @media (max-width: 1240px) {
     &__content {
       padding-right: 88px;
@@ -125,7 +140,7 @@
           border-top: 1px solid #373737;
         }
       }
-      
+
       &--pt-lg {
         padding-top: 80px;
 

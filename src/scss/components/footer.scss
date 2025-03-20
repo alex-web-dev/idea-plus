@@ -15,25 +15,26 @@
     width: 295px;
 
     &:nth-child(3) {
-        margin-left: auto;
-        padding-right: 0;
-        text-align: right;
+      margin-left: auto;
+      padding-right: 0;
+      text-align: right;
     }
   }
 
   &__label {
     margin-bottom: 32px;
+    display: block;
   }
 
   &__menu-item {
     &:not(:first-child) {
-        margin-top: 16px;
+      margin-top: 16px;
     }
   }
 
   &__contact {
     &:not(:first-child) {
-        margin-top: 20px;
+      margin-top: 20px;
     }
   }
 
@@ -63,7 +64,7 @@
 
   &__privacy-link {
     &:not(:first-child) {
-        margin-left: 60px;
+      margin-left: 60px;
     }
   }
 

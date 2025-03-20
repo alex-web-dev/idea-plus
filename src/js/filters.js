@@ -43,7 +43,7 @@ if ($filters) {
 
 function createSelected($filters, text = "") {
   const $items = $filters.querySelectorAll(".filters__item");
-  
+
   const $selected = createElem("div", "filter-selected filters__selected-item");
   $selected.dataset.label = text;
 
