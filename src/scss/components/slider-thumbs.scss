@@ -1,0 +1,23 @@
+.slider-thumbs {
+  &__img-box {
+    position: relative;
+    padding-top: min(138.82%, 236px);
+    width: 100%;
+    opacity: 0.3;
+    transition: opacity 0.35s;
+  }
+
+  &__slide.swiper-slide-thumb-active &__img-box {
+    opacity: 1;
+    cursor: default;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

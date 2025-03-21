@@ -2,18 +2,24 @@
   position: relative;
   width: 100%;
 
-  &--limited {
-    padding-bottom: 22px;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 233px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 79.61%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
 
+  &--shadow {
     &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      z-index: 1;
-      height: 233px;
-      width: 100%;
-      background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 79.61%);
+      opacity: 1;
+      visibility: visible;
     }
   }
 
@@ -46,6 +52,8 @@
 
   &__common {
     position: relative;
+    overflow: hidden;
+    transition: max-height 0.5s;
 
     &:before {
       content: "";
@@ -61,17 +69,13 @@
     }
   }
 
+  &--limited &__common {
+    max-height: 655px;
+  }
+
   &__body {
     &:not(:first-child) {
       padding-top: 80px;
-    }
-  }
-
-  &--limited &__body {
-    display: none;
-
-    &:first-child {
-      display: block;
     }
   }
 
@@ -81,23 +85,6 @@
 
   &__row {
     display: flex;
-  }
-
-  &--limited &__row {
-    display: none;
-
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4) {
-      display: flex;
-    }
-  }
-
-  &--limited-5 &__row {
-    &:nth-child(5) {
-      display: flex;
-    }
   }
 
   &__col {
@@ -136,23 +123,24 @@
 
   &__more {
     position: absolute;
-    bottom: 10px;
+    bottom: 32px;
     left: 0;
     z-index: 2;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
   }
 
-  &--limited &__more {
-    display: inline-flex;
+  &--shadow &__more {
+    opacity: 1;
+    visibility: visible;
   }
 
   &__less {
     margin-top: 45px;
+    transition: opacity 0.5s, visibility 0.5s;
   }
 
-  &--limited &__less {
-    display: none;
-  }
 
   @media (max-width: 1240px) {
     &--limited {
