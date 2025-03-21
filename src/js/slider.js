@@ -19,6 +19,24 @@ $sliders.forEach(($slider) => {
       spaceBetween: 8,
       speed: 500,
     });
+
+    const thumbsSlides = $thumbsSlider.querySelectorAll(".swiper-slide");
+    let hoverTimeout = null;
+
+    thumbsSlides.forEach((slide, index) => {
+      slide.addEventListener("mouseover", () => {
+        clearTimeout(hoverTimeout);
+        hoverTimeout = setTimeout(() => {
+          if ($swiper.swiper && $swiper.swiper.activeIndex !== index) {
+            $swiper.swiper.slideTo(index);
+          }
+        }, 20);
+      });
+
+      slide.addEventListener("mouseleave", () => {
+        clearTimeout(hoverTimeout);
+      });
+    });
   }
 
   new Swiper($swiper, {
